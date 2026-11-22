@@ -1,0 +1,48 @@
+# Lean 4 / Lake: downloaded dependencies and build caches
+.lake/
+/lake-packages/
+/build/
+
+# Lean compiler output
+*.olean
+*.olean.server
+*.olean.private
+*.ilean
+*.trace
+
+# Native compilation output
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.bc
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+.envrc
+.direnv/
+
+# Editor metadata and temporary files
+.idea/
+.vscode/*.local.*
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.log
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Keep Lean sources and reproducibility files under version control:
+# *.lean, lean-toolchain, lakefile.lean / lakefile.toml, lake-manifest.json
